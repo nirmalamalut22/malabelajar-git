@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
             fi
 
             if [ ! -d "/var/www/html/cicd/2305051" ]; then
-              mkdir -p /var/www/html/cicd/2305051
+              mkdir -p /var/www/html/cicd/2395051
             fi
 
             cd /var/www/html/cicd/2305051
